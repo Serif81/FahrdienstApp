@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Helles Grau für den Hintergrund */
+    color: #333; /* Dunkles Grau für den Text */
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #4c6b3b; /* Olivgrün für den Header */
+    color: white;
+    padding: 20px;
+    display: flex; /* Aktiviert Flexbox */
+    flex-direction: column; /* Elemente in einer Spalte anordnen */
+    align-items: center; /* Horizontale Zentrierung */
+}
+
+h2 {
+    color: #4c6b3b; /* Olivgrün für die Überschriften */
+    margin-top: 20px;
+}
+
+section {
+    border: 1px solid #ccc; /* Helles Grau für die Rahmen */
+    border-radius: 5px; /* Abgerundete Ecken */
+    padding: 15px;
+    margin-top: 20px;
+    background-color: white; /* Weißer Hintergrund für die Abschnitte */
+}
+
+button {
+    background-color: #4c6b3b; /* Olivgrün für die Buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc; /* Graue Farbe für inaktive Buttons */
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #3a4f2b; /* Dunkleres Olivgrün beim Hover */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo-container {
+    width: 60%;  /* Der Container soll die gesamte Breite ausfüllen */
+    max-width: 60%;  /* Container nicht breiter als die Seite */
+    text-align: center;  /* Inhalt des Containers zentrieren */
+}
+
+.logo {
+    max-width: 60%;  /* Das Logo darf nicht größer als der Container sein */
+    height: auto;  /* Automatische Höhe für Proportionalität */
+    display: block;  /* Blockelement, um Margins anzuwenden */
+    margin: 0 auto;  /* Zentrierung des Logos */
+}
+
+/* Spezielle Anpassung für kleinere Bildschirme */
+@media (max-width: 480px) {
+    .logo {
+        max-width: 80%;  /* Auf sehr kleinen Bildschirmen 80% der Breite */
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .logo {
+        max-width: 60%;  /* Auf mittleren Bildschirmen 60% der Breite */
+    }
+}
+
+@media (min-width: 769px) {
+    .logo {
+        max-width: 40%;  /* Auf größeren Bildschirmen 40% der Breite */
+    }
+}
